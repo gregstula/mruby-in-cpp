@@ -6,11 +6,81 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2A448CDA1C538132001FC4D6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A448CCA1C5380A1001FC4D6 /* main.cpp */; };
+		2A448CDB1C538135001FC4D6 /* mruby_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A448CC81C5380A1001FC4D6 /* mruby_state.cpp */; };
+		2A448CDD1C53828C001FC4D6 /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A448CDC1C53828C001FC4D6 /* libmruby.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A448CD01C53812F001FC4D6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2A448CC81C5380A1001FC4D6 /* mruby_state.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mruby_state.cpp; sourceTree = "<group>"; };
+		2A448CC91C5380A1001FC4D6 /* mruby_state.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mruby_state.hpp; sourceTree = "<group>"; };
+		2A448CCA1C5380A1001FC4D6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2A448CCB1C5380A1001FC4D6 /* vigenere.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vigenere.hpp; sourceTree = "<group>"; };
+		2A448CCD1C5380D5001FC4D6 /* vigenere.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = vigenere.rb; sourceTree = "<group>"; };
+		2A448CD21C53812F001FC4D6 /* mrbincpp.xcode-build */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mrbincpp.xcode-build"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A448CDC1C53828C001FC4D6 /* libmruby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby.a; path = ../mruby/build/host/lib/libmruby.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A448CCF1C53812F001FC4D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A448CDD1C53828C001FC4D6 /* libmruby.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		2A448CA51C537E2C001FC4D6 = {
 			isa = PBXGroup;
 			children = (
+				2A448CDC1C53828C001FC4D6 /* libmruby.a */,
+				2A448CC71C5380A1001FC4D6 /* src */,
+				2A448CCC1C5380D5001FC4D6 /* supporting_files */,
+				2A448CD31C53812F001FC4D6 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		2A448CC71C5380A1001FC4D6 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2A448CC91C5380A1001FC4D6 /* mruby_state.hpp */,
+				2A448CC81C5380A1001FC4D6 /* mruby_state.cpp */,
+				2A448CCA1C5380A1001FC4D6 /* main.cpp */,
+				2A448CCB1C5380A1001FC4D6 /* vigenere.hpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		2A448CCC1C5380D5001FC4D6 /* supporting_files */ = {
+			isa = PBXGroup;
+			children = (
+				2A448CCD1C5380D5001FC4D6 /* vigenere.rb */,
+			);
+			path = supporting_files;
+			sourceTree = SOURCE_ROOT;
+		};
+		2A448CD31C53812F001FC4D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A448CD21C53812F001FC4D6 /* mrbincpp.xcode-build */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -31,6 +101,26 @@
 		};
 /* End PBXLegacyTarget section */
 
+/* Begin PBXNativeTarget section */
+		2A448CD11C53812F001FC4D6 /* mrbincpp.xcode-build */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A448CD71C53812F001FC4D6 /* Build configuration list for PBXNativeTarget "mrbincpp.xcode-build" */;
+			buildPhases = (
+				2A448CCE1C53812F001FC4D6 /* Sources */,
+				2A448CCF1C53812F001FC4D6 /* Frameworks */,
+				2A448CD01C53812F001FC4D6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mrbincpp.xcode-build";
+			productName = "mrbincpp.xcode-build";
+			productReference = 2A448CD21C53812F001FC4D6 /* mrbincpp.xcode-build */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
 		2A448CA61C537E2C001FC4D6 /* Project object */ = {
 			isa = PBXProject;
@@ -39,6 +129,9 @@
 				ORGANIZATIONNAME = "Gregory D. Stula";
 				TargetAttributes = {
 					2A448CAA1C537E2C001FC4D6 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2A448CD11C53812F001FC4D6 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -51,13 +144,27 @@
 				en,
 			);
 			mainGroup = 2A448CA51C537E2C001FC4D6;
+			productRefGroup = 2A448CD31C53812F001FC4D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				2A448CAA1C537E2C001FC4D6 /* mruby-in-cpp */,
+				2A448CD11C53812F001FC4D6 /* mrbincpp.xcode-build */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A448CCE1C53812F001FC4D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A448CDA1C538132001FC4D6 /* main.cpp in Sources */,
+				2A448CDB1C538135001FC4D6 /* mruby_state.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		2A448CAB1C537E2D001FC4D6 /* Debug */ = {
@@ -156,6 +263,48 @@
 			};
 			name = Release;
 		};
+		2A448CD81C53812F001FC4D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = NO;
+				CODE_SIGN_IDENTITY = "-";
+				FRAMEWORK_SEARCH_PATHS = "/Users/greg-d-stula/src/github/mruby-in-cpp/mruby/build/host/lib";
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = NO;
+				GCC_WARN_PEDANTIC = NO;
+				HEADER_SEARCH_PATHS = "$(HOME)/src/github/mruby-in-cpp/mruby/include";
+				LIBRARY_SEARCH_PATHS = "/Users/greg-d-stula/src/github/mruby-in-cpp/mruby/build/host/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2A448CD91C53812F001FC4D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = NO;
+				CODE_SIGN_IDENTITY = "-";
+				FRAMEWORK_SEARCH_PATHS = "/Users/greg-d-stula/src/github/mruby-in-cpp/mruby/build/host/lib";
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = NO;
+				GCC_WARN_PEDANTIC = NO;
+				HEADER_SEARCH_PATHS = "$(HOME)/src/github/mruby-in-cpp/mruby/include";
+				LIBRARY_SEARCH_PATHS = "/Users/greg-d-stula/src/github/mruby-in-cpp/mruby/build/host/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -175,6 +324,16 @@
 				2A448CAF1C537E2D001FC4D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A448CD71C53812F001FC4D6 /* Build configuration list for PBXNativeTarget "mrbincpp.xcode-build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A448CD81C53812F001FC4D6 /* Debug */,
+				2A448CD91C53812F001FC4D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

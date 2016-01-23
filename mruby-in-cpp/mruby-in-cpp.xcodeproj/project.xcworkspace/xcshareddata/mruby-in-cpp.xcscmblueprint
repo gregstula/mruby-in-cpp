@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4724E74EAAD15E29585662644FA4E64883DFDE57",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4724E74EAAD15E29585662644FA4E64883DFDE57" : 0,
+    "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2D7A1A42-64B7-4528-B286-DAD00DBBC801",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4724E74EAAD15E29585662644FA4E64883DFDE57" : "mruby-in-cpp\/",
+    "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE" : "mruby-in-cpp\/mruby\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "mruby-in-cpp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "mruby-in-cpp\/mruby-in-cpp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:gregstula\/mruby-in-cpp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4724E74EAAD15E29585662644FA4E64883DFDE57"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:gregstula\/mruby.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE"
+    }
+  ]
+}

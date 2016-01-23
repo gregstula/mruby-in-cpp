@@ -123,7 +123,7 @@ else
    if key.not_valid?
     puts "Invalid key! Must be alphabetical."
   else
-    txt = $stdin.gets.chomp
+    txt = gets.chomp
     vigenere(key, txt)
   end
 end

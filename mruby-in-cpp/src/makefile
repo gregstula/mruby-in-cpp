@@ -8,7 +8,7 @@ cxx = clang++
 cxxflags = -std=c++14
 
 # mruby
-cxxflags +=-Imruby/include  
+cxxflags += -I../../mruby/include  
 
 # Turn on all warnings.
 cxxflags += -Wall
@@ -17,7 +17,7 @@ cxxflags += -Wall
 cxxflags += -Werror
 
 # -pedantic-errors strictly enforces the standard
-cxxflags += -pedantic-errors
+#cxxflags += -pedantic-errors
 
 # -g turns on debug information
 cxxflags += -g
@@ -25,22 +25,24 @@ cxxflags += -g
 prog1 = vigenere_plus_plus 
 progs = $(prog1)
 
-src1 = vigenere.cpp
-srcs = $(src2)
-src_main = main.cpp 
+header_main = vigenere.hpp
+src_main = vigenere.cpp
 
-obj1 = vigenere.o
+src1 = mruby_state.cpp
+header1 = mruby_state.hpp
+
+obj1 = mruby_state.o
 objs = $(obj1)
 
-mruby = mruby/build/host/lib/libmruby.a
+mruby = ../../mruby/build/host/lib/libmruby.a
 
 all: $(progs)
 
-$(prog1): $(objs) $(src_main)
+$(prog1): $(objs) $(src_main) $(header_main)
 	$(cxx) $(cxxflags) $(objs) $(mruby) $(src_main) -o $(prog1)
 
-$(obj2): $(src2) $(header2) 
-	$(cxx) $(cxxflags) -c $(src2) 
+$(obj1): $(src1) $(header1) 
+	$(cxx) $(cxxflags) -c $(src1) 
 
 clean:
 	rm -f $(progs) $(objs)

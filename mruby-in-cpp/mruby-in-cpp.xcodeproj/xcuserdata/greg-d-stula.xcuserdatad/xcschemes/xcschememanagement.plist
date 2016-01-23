@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>mrbincpp.xcode-build.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>mruby-in-cpp 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>mruby-in-cpp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>2A448CAA1C537E2C001FC4D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2A448CD11C53812F001FC4D6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
